@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="square to circle animation" />
+<meta charset=utf-8 />
+<title>A Beginner’s Introduction to CSS Animation</title>
+
+<style>
+body {
+  background:azure;
+  font-size:15px;
+}
+.square-to-circle {
+  position:absolute !important;
+  top:calc(50% - 100px);
+  left:calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  -webkit-animation: square-to-circle 2s .5s infinite cubic-bezier(1,0.15,.29,1.21) alternate;
+  -moz-animation: square-to-circle 2s .5s infinite cubic-bezier(1,0.15,.29,1.21) alternate;
+  -ms-animation: square-to-circle 2s .5s infinite cubic-bezier(1,0.15,.29,1.21) alternate;
+  -o-animation: square-to-circle 2s .5s infinite cubic-bezier(1,0.15,.29,1.21) alternate;
+  animation: square-to-circle 2s .5s infinite cubic-bezier(1,0.15,.29,1.21) alternate;
+}
+
+
+@-webkit-keyframes square-to-circle {
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:indianred;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@-moz-keyframes square-to-circle {
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:indianred;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@-ms-keyframes square-to-circle {
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:indianred;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@-o-keyframes square-to-circle {
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:indianred;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes square-to-circle {
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:indianred;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+</style>
+</head>
+<body>
+   
+    <div class="square-to-circle"></div>
+
+</body>
+</html>
